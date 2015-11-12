@@ -1,0 +1,34 @@
+//
+//  AddressBook-Prefix.pch
+//  AddressBook
+//
+//  Created by apple on 15/9/6.
+//  Copyright (c) 2015年 apple. All rights reserved.
+//
+
+#ifndef AddressBook_AddressBook_Prefix_pch
+#define AddressBook_AddressBook_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#import "AppDelegate.h"
+#import "FMDB.h"
+#import "UIColor+AddColor.h"
+#import "UIView+Common.h"
+#import "personModel.h"
+#import "classModel.h"
+//屏幕宽高
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+//视图的高度
+#define HEIGHT(view) view.frame.size.height
+#define WIDTH(view)  view.frame.size.width
+#define VIEW_X(view) view.frame.origin.x
+#define VIEW_Y(view) view.frame.origin.y
+//是否模拟器
+#define ISSIMULATOR (NSNotFound != [[[UIDevice currentDevice] model] rangeOfString:@"Simulator"].location)
+//自定义tabBar高度
+#define IPHONE_CUSTOMTABBAR_HEIGHT 49
